@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basetimetable">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivityTimetable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="layout.Mondaymorning.MondayMorning"
+            android:label="@string/title_activity_monday_morning"
+            android:parentActivityName=".MainActivityTimetable"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.basetimetable.MainActivityTimetable" />
+
+            <intent-filter>
+                <action android:name="layout.Mondaymorning.MondayMorning" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name="layout.MondayMorning1.MondayMorning" /> -->
+
+        <activity android:name=".TuesdayMorning">
+            <intent-filter>
+                <action android:name="layout.TuesdayMorning.TuesdayMorning" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:name="layout.WednesdayMorning.WednesdayMorning"/> -->
+
+        <activity android:name=".WednesdayMorning">
+            <intent-filter>
+                <action android:name="layout.WednesdayMorning.WednesdayMorning" /> <!-- every new page needs this added and the format is layout.name.name -->
+
+                <category android:name="android.intent.category.DEFAULT" /> <!-- DEFAULT for most main page gets LAUNCHER -->
+            </intent-filter>
+        </activity>
+        <activity android:name=".WedMorn"></activity>
+    </application>
+
+</manifest>

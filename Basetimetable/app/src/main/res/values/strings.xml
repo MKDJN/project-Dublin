@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Basetimetable</string>
+    <string name="title_activity_monday_morning">MondayMorning</string>
+    <string name="button_Monday_Morning">Send</string>
+</resources>
